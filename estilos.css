@@ -1,0 +1,128 @@
+body{
+    background: url(bandera.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 100% 100%; 
+}
+h1 {
+    color: black;
+    background:lightgray;   
+    border-style: double;
+    border-color: black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 50px;
+    font-size: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    font-family: 'Silkscreen', sans-serif;
+}
+.columna {
+    display: flex;
+    justify-content: center;
+} 
+.atracciones {
+    border: solid;
+    margin: 20px;
+    background: lightgray;
+    width: 20%;
+    align-items: stretch;
+    text-align: center; 
+}
+.paris { 
+    text-align: justify;
+    margin: 10px 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.enlaces {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+button:hover {
+background: gray;
+color: white;
+}
+button:active {
+    background: blue;
+}  
+button {
+    font-size: 20px;
+}
+.perfil {
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.firma {
+    display: flex;
+}
+.datos {
+    margin-left: 10px; 
+}
+.info {
+    padding: 0 px;
+    margin: 0 px;
+    color: blanchedalmond;
+}
+footer {
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .columna {
+        flex-wrap: wrap;
+    }
+    .atracciones {
+        width: 35%;
+    }
+    img {
+        width: 75%;
+    }  
+    h1 {
+        font-size: 30px;
+    }
+    .info {
+        color: black;
+    }
+}
+@media (max-width: 425px) {
+    .columna {
+        flex-direction: column;
+    }
+    .atracciones {
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 30px;
+}
+    .perfil {
+        margin-left: 0px;
+}
+    .info {
+        color: black;
+}
+}
+@media (max-width: 320px) {
+    .columna {
+        flex-direction: column;
+    }
+    .atracciones {
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 24px;
+}
+    .perfil {
+        margin-left: 0px;
+}
+    .info {
+        color: black;
+    }
+}
